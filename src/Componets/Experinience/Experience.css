@@ -1,0 +1,46 @@
+.Expience{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    height: 20vh;
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+}
+.achivemeys{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.circle{
+    width:5rem;
+    height: 4rem;
+    background: rgb(253, 236, 80);
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+.circle::before{
+
+
+    border-radius: 100%;
+    content: '';
+    background-image: linear-gradient(to bottom,#87e6fb 0%,#ffc05c 100%);
+    top: -8px;
+    left: -8px;
+    bottom: -8px;
+    right:-8p;
+    position:absolute;
+    z-index: -1;
+    box-shadow: var(--boxShadow);
+    
+}
+.achivemeys :nth-child(3){
+    color: #ffc05c;
+}

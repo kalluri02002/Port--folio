@@ -1,0 +1,108 @@
+.intro{
+    display: flex;
+    height: 77vh;
+    margin-top:4.5rem
+}
+.L-intro{
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap:2rem
+
+}
+.L-name{
+    display: flex;
+    flex-direction: column;
+
+}
+.L-name>:nth-child(1){
+    color: var(--black);
+    font-weight: bold;
+    font-size:2rem
+
+}
+.L-name>:nth-child(2){
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+.L-name>:nth-child(3){
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--brown);
+    margin-top: 10px;
+}
+.i-button{
+    width:6rem;
+    height: 3rem;
+
+}
+.l-icon{
+    
+    display: flex;
+    gap:0rem;
+    
+}
+.l-icon>*{
+    transform: scale(0.35);
+}
+.l-icon>*:hover{
+    cursor: pointer;
+    transform: scale(0.45);
+    
+}
+.R-intro{
+flex: 1;
+position: relative;
+
+}
+.R-intro>*{
+    position: absolute;
+    z-index: 1;
+}
+.R-intro>*:nth-child(1){
+    transform: scale(0.4);
+    left:-60%;
+    top:-55%;
+}
+.R-intro>*:nth-child(2){
+    top:-18rem;
+    transform: scale(0.3);
+    left:-15rem
+
+}
+.R-intro>*:nth-child(3){
+    transform: scale(0.6);
+    left:5%;
+    top:-30%;
+}
+.R-intro>*:nth-child(4){
+    transform: scale(0.4);
+    left:-25%;
+    top:-35%
+}
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 124rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -8;
+    top:-18%;
+    left:56%;
+    filter: blur(28px);
+}
+.blur2{
+    position: absolute;
+    width: 22rem;
+    height: 164rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -9;
+    top:30%;
+    left:20%;
+    filter: blur(35px);
+    transform: scale(1.6);
+}
+

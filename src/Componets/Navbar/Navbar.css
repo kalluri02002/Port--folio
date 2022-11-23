@@ -1,0 +1,46 @@
+.n-wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.n-left{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap:2rem;
+}
+.n-name{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.n-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+.l-list{
+    flex:10;
+    margin: 20px;
+}
+.l-list>ul{
+    margin: 4 rem;
+    gap:2rem;
+    display: flex;
+    
+
+
+}
+ul>li:hover{
+    cursor: pointer;
+    color: rgb(112, 79, 190);
+}
+.n-button{
+    flex: 2;
+}
+.naa:hover{
+    cursor: pointer;
+    color: aqua;
+
+}
