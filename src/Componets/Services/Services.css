@@ -60,3 +60,22 @@
     position: relative;
     left: 20rem;
 }
+.cards {
+    position: relative;
+}
+@media screen and (max-width:480px){
+    .Services{
+        margin-top: 2rem;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .cards{
+        position: absolute;
+        align-items: center;
+        bottom: -35rem;
+        right:27rem;
+        transform: scale(1.3);
+                 
+    
+    }
+}

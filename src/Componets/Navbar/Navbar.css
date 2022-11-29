@@ -41,6 +41,14 @@ ul>li:hover{
 }
 .naa:hover{
     cursor: pointer;
-    color: aqua;
+    color: var(--orange);
 
+}
+@media screen and (max-width:480px){
+    .n-button{
+        display: none;
+    }
+    .l-list{
+        display: none;
+    }
 }

@@ -105,4 +105,9 @@ position: relative;
     filter: blur(35px);
     transform: scale(1.6);
 }
+@media screen and (max-width:480px){
+    .intro{
+        flex-direction: column;
+    }
+}
 

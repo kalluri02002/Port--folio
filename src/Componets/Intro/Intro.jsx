@@ -11,19 +11,22 @@ import thumbup from "../../img/thumbup.png"
 import glass from "../../img/glassesimoji.png"
 import crown from "../../img/crown.png"
 import { Flotinting } from "../floatingdiv/floating";
-
-
-
+import { themecontex } from "../../Contex"
+import { useContext } from "react"
+import {motion } from "framer-motion"
 
 
 export const Intro=()=>{
+  const transition={duration:2,type:"spring"}
+  const theam=useContext(themecontex)
+  const darkmode=theam.state.darkmode
     return(
         <div className="intro">
             <div className="L-intro">
                 <div className="L-name">
-                    <span>Hy! I am</span>
+                    <span  style={darkmode ?{color:"white"} :{color:"black"}}>Hy! I am</span>
                     <span>Kalluri Naveen</span>
-                    <span>
+                    <span style={darkmode ?{color:"white"} :{color:"black"}}>
                         Frontend Developer with high level of experience in web 
                         designing and development, producting the Quality work
                     </span>
@@ -53,15 +56,28 @@ export const Intro=()=>{
                 <img src={Vector} alt=""/>
                 <img src={Vector2} alt=""/>
                 <img src={boy1} alt=""/>
-                <img src={glass} alt=""/>
-                <div style={{top:"-6%",left:"58%"}}>
+                <motion.img
+                initial={{left:"-36%"}}
+                whileInView={{left:"-26%"}}
+                transition={transition}
+                src={glass} alt=""/>
+                <motion.div 
+                    initial={{top:"-4",left:"50%"}}
+                    whileInView={{left:"60%"}}
+                transition={transition}
+                style={{top:"-6%",left:"58%"}}>
                   <Flotinting croun={crown} ti="web" tum="developer"/>
 
-                </div>
-                <div style={{top:"67%" ,left:"-10%" }}>
+                </motion.div>
+                <motion.div 
+                initial={{top:"15.5rem",left:"9rem"}}
+                whileInView={{left:"-0.5rem"}}
+                transition={transition}
+
+                style={{top:"67%" ,left:"-10%" }}>
                   <Flotinting croun={thumbup} ti="best" tum="design award"/>
 
-                </div>
+                </motion.div>
                 <div className="blur" style={{background:"rgb(238 210 255)"}}> </div>
                 <div className="blur2" style={{background:"#C1F5FF"}}> </div>
 

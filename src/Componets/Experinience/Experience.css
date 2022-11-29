@@ -6,6 +6,7 @@
     height: 20vh;
     margin-bottom: 8rem;
     margin-top: 8rem;
+    margin-top: 13rem;
 }
 .achivemeys{
     display: flex;
@@ -13,9 +14,9 @@
     align-items: center;
 }
 .circle{
-    width:5rem;
-    height: 4rem;
-    background: rgb(253, 236, 80);
+    width:3rem;
+    height: 3rem;
+    background: rgb(240, 240, 236);
     border-radius: 100%;
     position: relative;
     display: flex;
@@ -27,15 +28,13 @@
 
 }
 .circle::before{
-
-
     border-radius: 100%;
     content: '';
     background-image: linear-gradient(to bottom,#87e6fb 0%,#ffc05c 100%);
     top: -8px;
     left: -8px;
     bottom: -8px;
-    right:-8p;
+    right:-8px;
     position:absolute;
     z-index: -1;
     box-shadow: var(--boxShadow);

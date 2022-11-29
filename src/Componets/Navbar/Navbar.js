@@ -1,11 +1,13 @@
 import React from "react"
 import "./Navbar.css" 
 import{Link}from "react-scroll"
+import { Toggle } from "../Toggle/Toggle"
 export const Navbar=()=>{
     return(
         <div className="n-wrapper" id="navabar">
             <div className="n-left">
                 <div className="n-name"> Kalluri Naveen</div>
+                <Toggle/>
                 
 
             </div>
@@ -21,13 +23,23 @@ export const Navbar=()=>{
                         <Link spy="true" to="experi" smooth={true}>
                           <li className="naa">Experience</li>
                         </Link>
+                        <Link spy="true" to="port" smooth={true}>
+                          <li className="naa">Portfolio</li>
+                        </Link>
+                        <Link spy="true" to="testmonial" smooth={true}>
+                          <li className="naa">Testimonial</li>
+                        </Link>
+                        
                         
                         
                         
                     </ul>
                 </div>
                 <div>
-                    <button className="button n-button">Contact</button>
+                      <Link spy="true" to="contact" smooth={true}>
+                      
+                          <button className="button n-button">Contact</button>
+                        </Link>
 
                 </div>
 
