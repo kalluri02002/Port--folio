@@ -18,14 +18,14 @@
     flex: 1;
     align-items: center;
     justify-content: center;
-    font-weight: 400;
+    
 }
 .l-list{
     flex:10;
     margin: 20px;
 }
 .l-list>ul{
-    margin: 4 rem;
+    margin: 4rem;
     gap:2rem;
     display: flex;
     
@@ -42,13 +42,32 @@ ul>li:hover{
 .naa:hover{
     cursor: pointer;
     color: var(--orange);
+    
 
 }
 @media screen and (max-width:480px){
+    .n-wrapper{
+        padding-top: 15px;
+    }
     .n-button{
         display: none;
     }
     .l-list{
         display: none;
     }
+}
+@media all and  (max-width:1280px){
+    .n-name{
+        font-size: 3rem;
+        
+
+    }
+    .naa{
+        font-size: 2rem;
+    }
+    .n-button{
+        transform: scale(1.8);
+    }
+   
+  
 }

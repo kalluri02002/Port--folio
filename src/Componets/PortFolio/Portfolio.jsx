@@ -1,9 +1,9 @@
 import "./Portpolio.css"
 import {Swiper,SwiperSlide} from "swiper/react"
-import Sidebar from "../../img/sidebar.png"
-import Ecommerse from "../../img/ecommerce.png"
-import hoc from "../../img/hoc.png"
-import Musicap from "../../img/musicapp.png"
+import Sidebar from "../../img/twitter.png"
+import Ecommerse from "../../img/net.jfif"
+import hoc from "../../img/calcu.png"
+import Musicap from "../../img/chat.jfif"
 import 'swiper/css'
 import { themecontex } from "../../Contex"
 import { useContext } from "react"
@@ -27,7 +27,7 @@ export const Portfolio=()=>{
 
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={hoc} alt="" />
+                    <img src={hoc} alt=""  />
 
                 </SwiperSlide>
                 <SwiperSlide>

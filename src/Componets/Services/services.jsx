@@ -1,7 +1,7 @@
 import React from "react"
 import "./Services.css"
 import Hertemohji from "../../img/heartemoji.png"
-import glasses from "../../img/glasses.png"
+
 import Humble from "../../img/humble.png"
 import { Card } from "../Card/card"
 import remume from "./12.pdf"
@@ -33,24 +33,26 @@ export const Services=()=>{
             </div>
             <div className="cards ">
                 <motion.div 
-                    whileInView={{left:"15rem"}}
+                    className="card1"
+                    whileInView={{left:"40rem"}}
                     initial={{left:"15rem"}}
                     
                     transition={transition} 
-                    style={{ left:"60rem", position:"relative"}} >
+                    style={{ left:"40rem", position:"relative",transform:"scale(1.8)"}} >
                     <Card 
                     emoji={Hertemohji}
                     heading={"Developer"}
                     detail={"Html,Css,Javascript,React"}
 
                      />
-                    </motion.div>
+                </motion.div>
                 <motion.div 
+                    className="card2"
                     initial={{left:"10rem"}}
                     whileInView={{left:"10rem"}}
                     transition={transition}
-                    style={{left:"10rem",position:"absolute"}} >
-                    <Card 
+                    style={{left:"10rem",position:"absolute",transform:"scale(1.8)"}} >
+                    <Card style={{position:"relative",left:"30rem"}}
                     emoji={Humble}
                     heading={"UI/UX"}
                     detail={"I am practice and every website UI"}

@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 7rem;
+    margin-top: 17rem;
     flex-direction: column;
     gap: 2rem;
     position: relative;
@@ -14,7 +14,7 @@
     align-self: start;
 }
 .T-heading>*{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
 
 }
@@ -42,6 +42,7 @@
     border: 7px solid var(--blueCard);
     box-shadow: var(--boxShadow);
     border-radius: 20px;
+    transform: scale(2);
 }
 .Tesimonial>img{
     width: 6rem;

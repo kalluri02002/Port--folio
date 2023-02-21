@@ -3,7 +3,7 @@
     align-items: center;
     margin: -0.5rem -3.5rem;
     position: relative;
-    margin-top: -7rem;
+    margin-top: 7rem;
 }
 .f-content{
     position:absolute;
@@ -21,4 +21,19 @@
 .f-icons{
     display: flex;
     gap: 2rem;
+}
+.f-content>span{
+    font-size: 24px;
+}
+@media screen and (max-width:480px){
+    .f-content>span{
+        font-size: 15px;
+    }
+    .f-content{
+        margin-top: 5rem;
+        margin-bottom: 0;
+
+    }
+    
+   
 }

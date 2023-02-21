@@ -1,4 +1,5 @@
 import "./works.css";
+import { Link } from "react-scroll";
 import Upwork from "../../img/Upwork.png";
 import fiverr from "../../img/fiverr.png";
 import Amazon from "../../img/amazon.png";
@@ -24,9 +25,12 @@ export const Work=()=>{
                     <br />
                     good Experience with fontend and back-end
                 </spane>
-                
+                <Link spy="true" to="contact" smooth={true}>
+                          
+                  
 
-                 <button className="button s-button"> Hire Me</button>
+                   <button className="button s-button"> Hire Me</button>
+                </Link>
                 
                 <div className="burr s-brur" style={{background:"#ABF1FF94"}}>
 

@@ -7,7 +7,10 @@ export const Navbar=()=>{
         <div className="n-wrapper" id="navabar">
             <div className="n-left">
                 <div className="n-name"> Kalluri Naveen</div>
-                <Toggle/>
+                
+                <div className="tkbutt">
+                  <Toggle/>
+                </div>
                 
 
             </div>
@@ -27,7 +30,7 @@ export const Navbar=()=>{
                           <li className="naa">Portfolio</li>
                         </Link>
                         <Link spy="true" to="testmonial" smooth={true}>
-                          <li className="naa">Testimonial</li>
+                          <li className="naa " smooth={true}>Testimonial</li>
                         </Link>
                         
                         

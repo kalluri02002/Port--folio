@@ -8,8 +8,8 @@
     cursor: pointer;
 }
 .Toggle *{
-    width: 1rem;
-    height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
     color: var(--orange);
 }
 .t-button{

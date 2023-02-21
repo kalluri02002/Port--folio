@@ -1,4 +1,5 @@
 import "./Intro.css"
+import{Link}from "react-scroll"
 import React  from "react";
 import Github from "../../img/github.png";
 import Linkedin from "../../img/linkedin.png";
@@ -31,7 +32,10 @@ export const Intro=()=>{
                         designing and development, producting the Quality work
                     </span>
                 </div>
-                <button className=" button i-button"> Hire Me</button>
+                <Link spy="true" to="contact" smooth={true}>
+                          
+                  <button className=" button i-button kallbt" > Hire Me</button>
+                </Link>
                 <div className=" l-icon ">
                     <a href="https://www.linkedin.com/in/kalluri-naveen-741926208/">
                       <img src={Linkedin} alt=""/>
@@ -60,21 +64,21 @@ export const Intro=()=>{
                 initial={{left:"-36%"}}
                 whileInView={{left:"-26%"}}
                 transition={transition}
+                className="na"
                 src={glass} alt=""/>
                 <motion.div 
                     initial={{top:"-4",left:"50%"}}
                     whileInView={{left:"60%"}}
                 transition={transition}
-                style={{top:"-6%",left:"58%"}}>
+                className="crown"
+                style={{top:"-6%",left:"58%",transform:"scale(1.8)"}}>
                   <Flotinting croun={crown} ti="web" tum="developer"/>
 
                 </motion.div>
                 <motion.div 
                 initial={{top:"15.5rem",left:"9rem"}}
                 whileInView={{left:"-0.5rem"}}
-                transition={transition}
-
-                style={{top:"67%" ,left:"-10%" }}>
+                transition={transition}>
                   <Flotinting croun={thumbup} ti="best" tum="design award"/>
 
                 </motion.div>

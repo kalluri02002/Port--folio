@@ -2,12 +2,14 @@
     padding: 0 3rem 0 3rem;
     display: flex;
     height: 90vh;
-    margin-top: 4rem;
+    margin-top: 16rem;
 
 }
 .w-right{
     position: relative;
-    left: -5rem;
+    left: 8rem;
+    top: 20rem;
+    transform: scale(1.8);
     
 }
 .main-circle{
@@ -99,5 +101,16 @@
    flex-direction: column;
    gap: 10rem;
 }
+.w-right{
+    position: relative;
+    left: -10rem;
+    top: 2rem;
+    transform: scale(1.2);
+
+}
+
+}
+@media screen and (max-width:1280px){
+    
 
 }

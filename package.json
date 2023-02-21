@@ -1,5 +1,5 @@
 {
-  "name": "starter",
+  "name": "1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,5 +42,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "1",
+  "main": "1",
+  "repository": "[https://github.com/kalluri02002/my-portfoli.git].git",
+  "author": "kalluri02002 <118670200+kalluri02002@users.noreply.github.com>",
+  "license": "1"
 }

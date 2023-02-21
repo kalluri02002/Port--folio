@@ -3,10 +3,10 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    height: 20vh;
-    margin-bottom: 8rem;
-    margin-top: 8rem;
-    margin-top: 13rem;
+    height: 40vh;
+    
+    margin-top: 18rem;
+    
 }
 .achivemeys{
     display: flex;
@@ -14,8 +14,8 @@
     align-items: center;
 }
 .circle{
-    width:3rem;
-    height: 3rem;
+    width:5rem;
+    height: 5rem;
     background: rgb(240, 240, 236);
     border-radius: 100%;
     position: relative;
@@ -23,18 +23,18 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 3rem;
+    margin-bottom: 4rem;
 
 }
 .circle::before{
     border-radius: 100%;
     content: '';
     background-image: linear-gradient(to bottom,#87e6fb 0%,#ffc05c 100%);
-    top: -8px;
-    left: -8px;
-    bottom: -8px;
-    right:-8px;
+    top: -20px;
+    left: -20px;
+    bottom: -20px;
+    right:-20px;
     position:absolute;
     z-index: -1;
     box-shadow: var(--boxShadow);
@@ -42,4 +42,24 @@
 }
 .achivemeys :nth-child(3){
     color: #ffc05c;
+    font-size: 28px;
+}
+.achivemeys :nth-child(2){
+    font-size: 24px;
+
+}
+@media screen and (max-width:480px){
+    .Expience{
+        
+        position: relative;
+        top: 18rem;
+        transform: scale(0.6);
+    }
+    
+
+}
+@media screen and (max-width:1280px){
+    .Expience{
+        padding-top: -20px;
+    }
 }
