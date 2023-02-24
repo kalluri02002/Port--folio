@@ -4,7 +4,7 @@ import Hertemohji from "../../img/heartemoji.png"
 
 import Humble from "../../img/humble.png"
 import { Card } from "../Card/card"
-import remume from "./12.pdf"
+import remume from "./king.pdf"
 import { themecontex } from "../../Contex"
 import { useContext } from "react"
 import {motion } from "framer-motion"
